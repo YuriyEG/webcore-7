@@ -4,35 +4,35 @@
 @import './fonts';
 
 
-// @font-face { 
-//   font-family: "TTLakes-Bold";
-//   src: url("../fonts/TTLakes-Bold.eot");
-//   src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
-//   url("../fonts/TTLakes-Bold.woff") format("woff"),
-//   url("../fonts/TTLakes-Bold.ttf") format("truetype");
-//   font-style: normal;
-//   font-weight: 500;
-// }
+@font-face { 
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
+  url("../fonts/TTLakes-Bold.woff") format("woff"),
+  url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
 
-// @font-face { 
-//   font-family: "TTLakes-Light";
-//   src: url("../fonts/TTLakes-Light.eot");
-//   src: url("../fonts/TTLakes-Light.eot")format("embedded-opentype"),
-//   url("../fonts/TTLakes-Light.woff") format("woff"),
-//   url("../fonts/TTLakes-Light.ttf") format("truetype");
-//   font-style: normal;
-//   font-weight: 500;
-// }
+@font-face { 
+  font-family: "TTLakes-Light";
+  src: url("../fonts/TTLakes-Light.eot");
+  src: url("../fonts/TTLakes-Light.eot")format("embedded-opentype"),
+  url("../fonts/TTLakes-Light.woff") format("woff"),
+  url("../fonts/TTLakes-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
 
-// @font-face { 
-//   font-family: "TTLakes-ExtraBold";
-//   src: url("../fonts/TTLakes-ExtraBold.eot");
-//   src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
-//   url("../fonts/TTLakes-ExtraBold.woff") format("woff"),
-//   url("../fonts/TTLakes-ExtraBold.ttf") format("truetype");
-//   font-style: normal;
-//   font-weight: 500;
-// }
+@font-face { 
+  font-family: "TTLakes-ExtraBold";
+  src: url("../fonts/TTLakes-ExtraBold.eot");
+  src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
+  url("../fonts/TTLakes-ExtraBold.woff") format("woff"),
+  url("../fonts/TTLakes-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
 
 
 /* Базовые стили. Мобильная версия/     width < 768px     */

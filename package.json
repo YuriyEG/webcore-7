@@ -57,6 +57,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "copy-webpack-plugin": "^11.0.0",
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "swiper": "^10.0.4"
   }
 }

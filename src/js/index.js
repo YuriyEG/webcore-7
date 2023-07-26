@@ -8,6 +8,7 @@ console.log('Я внес изменения');
 
 import '../index.html';
 import '../scss/style.scss';
+
   // Показ и скрытие бокового меню с кнопки
    let headerBurger = document.querySelector('.header__burger');
 
@@ -98,6 +99,12 @@ mainSummary.addEventListener( 'click', function () {
 });
 
 
+
+
+import Swiper from 'swiper/bundle';
+      import 'swiper/css/bundle';
+
+      
 const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -148,3 +155,6 @@ const swiper = new Swiper('.swiper', {
       });
 
      
+      
+
+  
