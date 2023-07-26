@@ -1,17 +1,10 @@
 console.log('Я внес изменения');
 
-import code from '../img/picture.jpg';
+
 
 // import '@babel/polyfill'; добавил в конфиге
 
 
-
-
-const imgWrap = document.querySelector('.img');
-const img = new Image();
-img.src = code;
-imgWrap.append(img);
-img.width = '700';
 
 import '../index.html';
 import '../scss/style.scss';

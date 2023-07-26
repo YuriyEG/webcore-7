@@ -4,7 +4,63 @@
 @import './fonts';
 
 
+// @font-face { 
+//   font-family: "TTLakes-Bold";
+//   src: url("../fonts/TTLakes-Bold.eot");
+//   src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
+//   url("../fonts/TTLakes-Bold.woff") format("woff"),
+//   url("../fonts/TTLakes-Bold.ttf") format("truetype");
+//   font-style: normal;
+//   font-weight: 500;
+// }
 
+// @font-face { 
+//   font-family: "TTLakes-Light";
+//   src: url("../fonts/TTLakes-Light.eot");
+//   src: url("../fonts/TTLakes-Light.eot")format("embedded-opentype"),
+//   url("../fonts/TTLakes-Light.woff") format("woff"),
+//   url("../fonts/TTLakes-Light.ttf") format("truetype");
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
+// @font-face { 
+//   font-family: "TTLakes-ExtraBold";
+//   src: url("../fonts/TTLakes-ExtraBold.eot");
+//   src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
+//   url("../fonts/TTLakes-ExtraBold.woff") format("woff"),
+//   url("../fonts/TTLakes-ExtraBold.ttf") format("truetype");
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
+
+/* Базовые стили. Мобильная версия/     width < 768px     */
+
+body {
+  
+  background-color: rgba(248, 248, 248, 1);
+  margin: 0;
+  padding: 0;
+
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.display--none {
+  display: none;
+}
+.display--block {
+  display: block;
+}
+.display--inlineBlock {
+  display: inline-block;
+}
+.display--inline {
+  display: inline;
+}
 .cps-root {
   
   width: 100vw;
@@ -19,6 +75,8 @@
   z-index: 0;
 
 }
+
+
 
 ::-webkit-scrollbar {
   width: 0;
@@ -129,7 +187,6 @@
   margin-left: 16px;
   
 }
-
 
 
 .header__hi-resol {
@@ -568,22 +625,28 @@ a  {
 }
 
 .main__post-text {
-
-  width: 90%;
-  height: auto;
-  font-size: 16px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(80, 80, 80);
-  display: block;
+          
   font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
   font-weight: 900;
+  width: 48%;
+  padding: 4px 30px 16px 12px;
+  margin-top: 4px;
+  
+}
+
+
+.main__picture {
+
+  width: 52%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
 
 }
+
 .main__hidden-text {
   display: none;
 }
@@ -669,14 +732,22 @@ a  {
 .main__brands-title {
   width: 100%;
   height: auto;
-  padding: 16px;
+  min-height: 56px;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-bottom: 16px;
   box-sizing: border-box;
-  background-image: linear-gradient(90deg, rgb(0, 0, 0, 0.03) 0px,  rgba(0, 0, 0, 0.03) 110px,
-   rgba(0, 0, 0, 0.02) 110px,  rgba(0, 0, 0, 0.02) 220px,  rgba(0, 0, 0, 0.01) 220px, 
-   rgba(0, 0, 0, 0.01)  320px, white 320px);
+ 
+  background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+
   
 }
 .main__brands-title a  {
+  
   display: inline-block;
   text-decoration: none;
   width: auto;
@@ -694,11 +765,14 @@ a  {
   height: auto;
   display: none;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
-  
-  padding: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
   padding-right: 0px;
+  
+  
   box-sizing: border-box;
   justify-items: auto;
   
@@ -731,6 +805,8 @@ a  {
   border: 1px solid rgba(234, 234, 234, 1);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 6px;
+
+
 }
 
 
@@ -739,7 +815,7 @@ a  {
   width: 40px;
   height: 40px;
   background-image: url('../img/go.svg');
- margin: 16px;
+  margin: 16px;
 }
 
 .main__brand-logo--bosch {
@@ -844,36 +920,43 @@ a  {
 
   width: 96%;
   min-width: 0;
-  height: 100px;
+  height: 150px;
   box-sizing: border-box;
-  margin: 0 auto;
   margin-top: 24px;
   margin-bottom: 48px;
- 
   overflow: hidden;
 
 
 }
 
 .swiper {
-  width: 240px !important;
+  
+  width: 248px !important;
   height: 100px;
   display: none;
   overflow: visible !important;
+
+  margin-left: 24px !important;
+  height: 120px;
 
  
   
 }
 .swiper-slide {
+
   display: block;
   position: center;
   overflow: visible;
+  margin-bottom: 24px;
  
 
-  
+}
+
+.swiper-pagination {
+  width: 90vw !important;
  
   
-  
+
 }
 
 
@@ -881,6 +964,29 @@ a  {
 /*   width < 768 */
 
 @media screen and (max-width: 768px) {
+
+
+  .main__post {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+  
+  }
+  .main__post-text {
+   
+      width: 90%;
+      margin: 0;
+      padding: 16px;
+      padding-left: 24px;
+      font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      font-weight: 900;
+     
+
+  }
 
   .main__brand-item  {
       background-color: rgb(176, 176, 176);
@@ -898,6 +1004,8 @@ a  {
       border-radius: 6px;
 
   }
+
+
 
 
 }
@@ -925,7 +1033,7 @@ a  {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      font-family: "TTLakes-Light", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: 100;
       width: 320px;
       height: 100vh;
@@ -1000,17 +1108,21 @@ a  {
       width: 98%;
       margin: 20px;
       margin-left: 16px;
+      margin-bottom: 0px;
       
       display: flex;
       flex-wrap: wrap;
       height: auto;
     
   }
-
+  .block {
+    
+      height: 40px;
+  }
   .main__menu-item {
 
       display: inline-block;
-      font-family: "TTLakes-Medium", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-family: 'TTLakes-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       
   }
  
@@ -1024,14 +1136,19 @@ a  {
       justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
-      padding: 0;
-     
+      margin-top: 0px;
+      padding-top: 0px;
+    
+      
+  
   }
 
   .main__post-text {
 
-      font-family:"TTLakes-Light","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 16px;
+      font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
       font-weight: 900;
       border-left: 0;
       width: 44%;
@@ -1077,11 +1194,12 @@ a  {
 
   .main__brands {
 
-      width: 99%;
+      width: 100%;
   
   }
   .main__brands-box {
-      padding: 24px 24px 24px 24px;
+      padding-top: 24px;
+      padding-left: 24px;
       height: 200px;
       overflow: hidden;
       display: flex;
@@ -1090,15 +1208,16 @@ a  {
 
   .main__brand-item {
       width: 29%;
-      margin-left: 0px;
+      margin-right: 24px;
+      margin-bottom: 16px;
 
       min-width: 215px;
-      margin-right: 12px;
+  
   }
   .main__brands-more {
       display: flex;
       margin: 0px 24px 24px 32px;
-      font-family: "TTLakes-Light", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-family: 'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: rgba(27, 28, 33, 1);
 
 
@@ -1146,16 +1265,18 @@ a  {
       .sidebar {
   
           height: 100%;
+          
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           position: absolute;
           left: 0px;
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.064);
-          font-family: "TTLikes-Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-family: 'TTLikes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-weight: 100;
           
       }
+     
       .sidebar__header {
           margin-bottom: 4px;
       }
@@ -1298,7 +1419,7 @@ a  {
       
       .main__post-text {
           
-          font-family:"TTLakes-Light","Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 14px;
           line-height: 20px;
           letter-spacing: 0.2px;
@@ -1333,7 +1454,7 @@ a  {
           font-size: 28px;
           line-height: 40px;
           letter-spacing: -0.6px;
-          font-family: "TTLakes-Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-family: 'TTLakes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           
 
       }
@@ -1362,11 +1483,14 @@ a  {
       }
       .main__brands {
   
-          width: 99%;
+          width: 100%;
+          
+          
       }
       .main__brand-item {
           width: 22%;
-          margin-left: 0px;
+          margin-right: 24px;
+          margin-bottom: 16px;
           min-width: 220px;
       }
       .main__brands-box {
@@ -1375,25 +1499,41 @@ a  {
           overflow: hidden;
           display: flex;
           margin-bottom: 24px;
-      }
-      .main__brands-more {
-          display: block;
-          
-      
+          padding-left: 24px;
+          padding-top: 24px;
+         
       }
 
       .main__brands-more {
           display: flex;
-          margin: 0px 24px 24px 32px;
-          font-family: "TTLakes-Light", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          flex-direction: row;
+          justify-content: flex-start;
+          
+          font-family: 'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           color: rgba(27, 28, 33, 1);
+          width: 140px;
+          height: 24px;
+          margin-left: 24px;
+   
+          padding: 0;
+
   
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 900;
-          width: 200px;
-          margin-left: 4px;
-  
+      }
+
+      .main__more {
+          display: inline;
+          margin: 0;
+          padding: 0;
+      
+          
+
+      }
+
+      .main__more-text {
+          margin: 0;
+          padding: 0;
+          display: inline;
+        
       }
       .main__brands-box--open {
           height: auto;
