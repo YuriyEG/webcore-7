@@ -3,33 +3,28 @@
 @import '../libs/normalize';
 @import './fonts';
 
+$regular: 'TTLakes-Regular';
+$medium: 'TTLakes-Medium';
+$bold: 'TTLakes-Bold';
+
 
 @font-face { 
   font-family: "TTLakes-Bold";
-  src: url("../fonts/TTLakes-Bold.eot");
-  src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
-  url("../fonts/TTLakes-Bold.woff") format("woff"),
-  url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face { 
-  font-family: "TTLakes-Light";
-  src: url("../fonts/TTLakes-Light.eot");
-  src: url("../fonts/TTLakes-Light.eot")format("embedded-opentype"),
-  url("../fonts/TTLakes-Light.woff") format("woff"),
-  url("../fonts/TTLakes-Light.ttf") format("truetype");
+  font-family: "TTLakes-Regular";
+  src: url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face { 
-  font-family: "TTLakes-ExtraBold";
-  src: url("../fonts/TTLakes-ExtraBold.eot");
-  src: url("../fonts/TTLakes-Bold.eot")format("embedded-opentype"),
-  url("../fonts/TTLakes-ExtraBold.woff") format("woff"),
-  url("../fonts/TTLakes-ExtraBold.ttf") format("truetype");
+  font-family: "TTLakes-Medium";
+  src: url("../fonts/TTLakes-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
@@ -92,8 +87,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
+  font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 
@@ -342,8 +336,7 @@ body {
 a  {
   text-decoration: none;
   color: black;
-  font-family: 'TTLakes-ExtraBold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
+  font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sidebar__ul {
@@ -395,9 +388,8 @@ a  {
 
 .sidebar__nav a {
 
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 900;
   text-decoration: none;
   display: block;
   height: 28px;
@@ -431,11 +423,20 @@ a  {
 
 }
 
-.icon-effect:hover {
+.scale-effect:hover {
 
-  opacity: 60%;
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
+  transform: scale(1.05);
+  transition: all 0.1s ease-out;
+  
+}
+.rotate-effect:hover {
+  transform: rotate(10deg);
+  transition: all 0.1s ease-out;
+}
+
+.opacity-effect:hover {
+  opacity: 70%;
+  transition: all 0.1s ease-out;
   
 }
 
@@ -445,7 +446,7 @@ a  {
   width: 220px;
   height: 200px;
   padding: 16px 24px 16px 24px;
-  font-family: "TTLakesMedium";
+  font-family: $medium;
   margin-top: 200px;
 
 }
@@ -461,22 +462,20 @@ a  {
   
   margin-top: 16px;
   margin-bottom: 16px;
-  font-weight: lighter;
   font-size: 16px;
 
 }
 
 .sidebar__email a {
 
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 .sidebar__phone {
 
-  font-family: 'TTLakes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 900;
   font-size: 24px;
   margin-top: 12px;
 
@@ -485,10 +484,8 @@ a  {
 .sidebar__lang {
 
   margin-top: 12px;
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
-  font-weight: 900;
-  
 }
 
 .sidebar__lang span:nth-child(1) {
@@ -536,7 +533,7 @@ a  {
   width: 100%;
   height: auto;
   background: rgba(248, 248, 248, 1);
-  font-family: TTLakesMedium;
+  font-family: $medium;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -549,7 +546,11 @@ a  {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'TTLakes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  font-weight: 900;
 
 }
 
@@ -595,10 +596,9 @@ a  {
   white-space: nowrap;
   color: gray;
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0);
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid rgba(186, 7, 7, 0);
+  font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 900;
 
 }
 
@@ -626,14 +626,14 @@ a  {
 
 .main__post-text {
           
-  font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  font-weight: 900;
   width: 48%;
   padding: 4px 30px 16px 12px;
   margin-top: 4px;
+
   
 }
 
@@ -653,34 +653,44 @@ a  {
 
 .main__summary {
 
-  width: 124px;
+  width: 140px;
   height: 24px;
   color: black;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 12px;
   margin-bottom: 12px;
+
 
 }
 
 .main__summary-text {
 
   display: inline;
-  font-size: 16px;
+  
   margin-left: 4px;
   white-space: nowrap;
   align-self: center;
+
+  font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2;
+
 
 }
 
 .main__text {
 
-  font-size: 28px;
-  font-weight: bolder;
   display: inline-block;
   padding-bottom: 16px;
   vertical-align: 20%;
-  
+  font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+
 }
 
 .main__more {
@@ -709,16 +719,15 @@ a  {
 
 }
 
-.main-text {
-      
-  display: block;
-
-}
-
 .main__tittle-span {
 
  position: relative;
  top: -12px;
+ font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  font-weight: 900;
   
 }
 
@@ -751,11 +760,11 @@ a  {
   display: inline-block;
   text-decoration: none;
   width: auto;
+  font-size: 16px;
   line-height: 24px;
-  
-  font: 16px;
-  font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgba(126, 126, 130, 1);
+
   
 
 
@@ -979,11 +988,10 @@ a  {
       margin: 0;
       padding: 16px;
       padding-left: 24px;
-      font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
-      font-weight: 900;
      
 
   }
@@ -1033,8 +1041,6 @@ a  {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      font-family: 'TTLakes-Light', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: 100;
       width: 320px;
       height: 100vh;
       position: absolute;
@@ -1122,7 +1128,7 @@ a  {
   .main__menu-item {
 
       display: inline-block;
-      font-family: 'TTLakes-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
       
   }
  
@@ -1145,14 +1151,12 @@ a  {
 
   .main__post-text {
 
-      font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
-      font-weight: 900;
       border-left: 0;
       width: 44%;
-      padding: 16px;
       padding: 16px 20px 16px 20px;
       align-self: flex-start;
       
@@ -1197,6 +1201,12 @@ a  {
       width: 100%;
   
   }
+
+  .main__brands-title a {
+    font-size: 16px;
+  line-height: 24px;
+  font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   .main__brands-box {
       padding-top: 24px;
       padding-left: 24px;
@@ -1217,13 +1227,12 @@ a  {
   .main__brands-more {
       display: flex;
       margin: 0px 24px 24px 32px;
-      font-family: 'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: $medium,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: rgba(27, 28, 33, 1);
 
 
       font-size: 16px;
       line-height: 24px;
-      font-weight: 900;
       width: 200px;
       margin-left: 4px;
 
@@ -1256,7 +1265,7 @@ a  {
           background-color: rgba(248, 248, 248, 1);
           position: relative;
           padding-left: 320px;
-          font-family: 'TTLakes-Light', sans-serif;
+          font-family: $regular, sans-serif;
           font-size: 16px;
           font-weight: 900;
         
@@ -1272,8 +1281,8 @@ a  {
           position: absolute;
           left: 0px;
           box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.064);
-          font-family: 'TTLikes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-weight: 100;
+
+         
           
       }
      
@@ -1306,7 +1315,10 @@ a  {
           margin-top: 2px;
           margin-bottom: 6px;
       }
-
+      .sidebar__li a {
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+        font-weight: 200;
+      }
   
 
       .header {
@@ -1392,6 +1404,10 @@ a  {
           line-height: 24px;
           letter-spacing: -0.2px;
           margin-bottom: 4px;
+          font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-weight: 200;
+
+          
           
           
       }
@@ -1415,15 +1431,16 @@ a  {
 
       .main__hidden-text {
           display: inline;
+
       }
       
       .main__post-text {
           
-          font-family:'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 14px;
           line-height: 20px;
           letter-spacing: 0.2px;
-          font-weight: 900;
+          font-weight: 200;
           width: 48%;
           padding: 4px 30px 16px 12px;
           margin-top: 4px;
@@ -1454,7 +1471,7 @@ a  {
           font-size: 28px;
           line-height: 40px;
           letter-spacing: -0.6px;
-          font-family: 'TTLakes-Bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           
 
       }
@@ -1487,6 +1504,15 @@ a  {
           
           
       }
+
+      .main__brands-title a {
+
+          font-size: 16px;
+          line-height: 24px;
+          font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-weight: 200;
+      }
+
       .main__brand-item {
           width: 22%;
           margin-right: 24px;
@@ -1509,12 +1535,11 @@ a  {
           flex-direction: row;
           justify-content: flex-start;
           
-          font-family: 'TTLakes-Light','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           color: rgba(27, 28, 33, 1);
           width: 140px;
           height: 24px;
           margin-left: 24px;
-   
           padding: 0;
 
   
@@ -1533,6 +1558,7 @@ a  {
           margin: 0;
           padding: 0;
           display: inline;
+
         
       }
       .main__brands-box--open {
