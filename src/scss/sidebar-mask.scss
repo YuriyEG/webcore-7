@@ -1,0 +1,11 @@
+.sidebar__mask {
+    display: none;
+    width: 200vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.176);
+    position: fixed;
+    top: -300px;
+    left: -300px;
+    z-index: 8;
+    
+  }
