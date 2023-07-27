@@ -19,12 +19,11 @@
         box-sizing: border-box;
         padding: 20px 20px 20px 24px;
         width: 100%;
+        height: 92px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0px;
-        margin-top: 0px; 
 
     }
 
@@ -44,7 +43,7 @@
         align-self: center;
         margin-right: auto;
         margin-left: 12px;
-        margin-top: -2px;
+        
 
     }
 
@@ -53,7 +52,6 @@
         width: 40px;
         height: 40px;
         background-image: url('../img/search.svg');
-        margin-top: -3px;
         margin-right: 6px;
 
     }
@@ -103,28 +101,29 @@
     &__li {
 
         list-style: none;
-        padding: 0px;
-        margin: 0px;
         font-size: 16px;
         line-height: 24px;
-        margin-top: 2px;
-        margin-bottom: 6px;
+        
+        margin-bottom: 8px;
+        letter-spacing: -0.2px;
+        
 
     }
+
 
     &__nav {
 
        width: 248px;
        height: auto;
-       margin-bottom: 12px;
-       margin-top: 0px;
        display: inline-block; 
+
+       
 
        ul {
 
           display: flex;
           flex-wrap: wrap;
-          margin-top: 12px;
+          margin: 0px;
 
        }
 
@@ -141,7 +140,7 @@
           font-size: 16px;
           text-decoration: none;
           display: block;
-          height: 28px;
+          height: 24px;
           text-indent: 24px;
           font-size: 16px;
           padding-top: 12px;
@@ -259,43 +258,19 @@
         z-index: 10;
         box-sizing: border-box;
 
-        &__header {
-
-            margin-bottom: 4px;
-
-        }
-
-        &__close {
-
-            display: none;
-            margin-top: -6px;
+        &__nav {
+            margin-top: 24px;
         }
 
         &__search {
 
-            margin-top: -3px;
             margin-right: 6px;
-
-        }
-
-        &__logo {
-
-            margin-top: -2px;
 
         }
 
         &__ul {
 
             margin-top: 0px;
-
-        }
-
-        &__li {
-
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 2px;
-            margin-bottom: 6px;
 
         }
 
@@ -316,50 +291,25 @@
         left: 0px;
         box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.064);
 
-        &__header {
+        &__nav {
 
-            margin-bottom: 4px;
-
+            margin-top: 24px;
+            
         }
 
         &__close {
 
             display: none;
-            margin-top: -4px;
-
-        }
-
-        &__search {
-
-            margin-top: -3px;
-            margin-right: 6px;
-
-        }
-
-        &__logo {
-
-            margin-top: -2px;
-
-        }
-
-        &__ul {
-
-            margin-top: 0p;
 
         }
 
         &__li {
 
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 2px;
-            margin-bottom: 6px;
-
             a {
 
                 font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
                 font-weight: 200;
-                
+
             }
 
         }
