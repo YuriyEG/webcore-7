@@ -1,5 +1,4 @@
 
-
 .main {
 
     width: 100%;
@@ -37,8 +36,6 @@
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    border: 1px solid black;
-
   
   }
   
@@ -110,210 +107,12 @@
   
 
 
-.main__brands {
-    width: 100%;
-    height: auto;
-    
-    
-    
-  }
-  .main__brands-title {
-    width: 100%;
-    height: auto;
-    min-height: 56px;
-  
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    padding-top: 16px;
-    padding-left: 24px;
-    padding-bottom: 16px;
-    box-sizing: border-box;
-   
-    background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-  
-    
-  }
-  .main__brands-title a  {
-    
-    display: inline-block;
-    text-decoration: none;
-    width: auto;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgba(126, 126, 130, 1);
-  
-    
-  
-  
-  }
 
-.main__brands-box {
-    width: 100%;
-    height: auto;
-    display: none;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 0px;
-    
-    
-    box-sizing: border-box;
-    justify-items: auto;
-    
-  
-  
-  }
-  .main__brands-more {
-    display: none;
-    width: 200px;
-  
-    padding-left: 24px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    
-  }
-  .main__brands-more .main__more:first-child {
-    margin-right: 12px;
-  }
+ 
+
   
 
 
-.main__brand-item  {
-    background-color: rgb(176, 176, 176);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 224px;
-    
-    height: 72px;
-    margin-right: 24px;
-    margin-bottom: 16px;
-    border: 1px solid rgba(234, 234, 234, 1);
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 6px;
-  
-  
-  }
-  
-  .main__brand-href {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/go.svg');
-    margin: 16px;
-  }
-  
-
-.main__brand-logo--bosch {
-    background-image: url('../img/bosch.svg');
-    background-size: 100%;
-    width: 128px;
-    height: 28px;
-  
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: 16px;
-   
-  
-  
-  }
-  
-  .main__brand-logo--samsung {
-    background-image: url('../img/samsung.svg');
-    background-size: 100%;
-    width: 116px;
-    height: 38px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    margin-right: auto;
-    
-  }
-  
-
-.main__brand-logo--apple {
-    background-image: url('../img/apple.svg');
-    background-size: 100%;
-    width: 44px;
-    height: 44px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    
-  }
-  
-  .main__brand-logo--hp {
-    background-image: url('../img/hp.svg');
-    background-size: 100%;
-    width: 52px;
-    height: 52px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    
-  }
-
-
-.main__brand-logo--sony {
-    background-image: url('../img/sony.svg');
-    background-size: 100%;
-    width: 128px;
-    height: 26px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    
-  }
-  
-  .main__brand-logo--wiew-sonic {
-    background-image: url('../img/wiew-sonic.svg');
-    background-size: 100%;
-    width: 128px;
-    height: 21px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    
-  }
-  
-
-.main__brand-logo--lenovo {
-    background-image: url('../img/lenovo.svg');
-    background-size: 100%;
-    width: 108px;
-    height: 32px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    
-  }
-  .main__brand-logo--acer {
-  
-    background-image: url('../img/acer.svg');
-    background-size: 100%;
-    width: 108px;
-    height: 32px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16px;
-    width: 94px;
-    height: 24px;
-    
-  }
-  
   @media screen and (min-width:  768px) and (max-width: 1120px) {
       
 
@@ -354,57 +153,6 @@
 
   
   
-  
-    .main__brands {
-  
-        width: 100%;
-    
-    }
-
-    .main__brands-title a {
-        font-size: 16px;
-      line-height: 24px;
-      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-      .main__brands-box {
-          padding-top: 24px;
-          padding-left: 24px;
-          height: 200px;
-          overflow: hidden;
-          display: flex;
-          margin-bottom: 24px;
-      }
-    
-      .main__brand-item {
-          width: 29%;
-          margin-right: 24px;
-          margin-bottom: 16px;
-    
-          min-width: 215px;
-      
-      }
-
-    .main__brands-more {
-        display: flex;
-        margin: 0px 24px 24px 32px;
-        font-family: $medium,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgba(27, 28, 33, 1);
-  
-  
-        font-size: 16px;
-        line-height: 24px;
-        width: 200px;
-        margin-left: 4px;
-  
-    }
-  
-  
-  
-  
-  
-    .main__brands-box--open {
-        height: auto;
-    }
 
   
   }
@@ -479,57 +227,7 @@
      }
 
 
-     .main__brands {
- 
-         width: 100%;
-         
-         
-     }
 
-     .main__brands-title a {
-
-         font-size: 16px;
-         line-height: 24px;
-         font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         font-weight: 200;
-     }
-
-     .main__brand-item {
-         width: 22%;
-         margin-right: 24px;
-         margin-bottom: 16px;
-         min-width: 220px;
-     }
-     .main__brands-box {
-   
-         height: 200px;
-         overflow: hidden;
-         display: flex;
-         margin-bottom: 24px;
-         padding-left: 24px;
-         padding-top: 24px;
-        
-     }
-
-     .main__brands-more {
-         display: flex;
-         flex-direction: row;
-         justify-content: flex-start;
-         
-         font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-         color: rgba(27, 28, 33, 1);
-         width: 140px;
-         height: 24px;
-         margin-left: 24px;
-         padding: 0;
-
- 
-     }
-
-
-     .main__brands-box--open {
-         height: auto;
-     }
      
   
   }

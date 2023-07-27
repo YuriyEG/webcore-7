@@ -65,23 +65,23 @@ openMask.addEventListener('click', function () {
 
 
 //  Показ всего списка брендов
-let moreBrands = document.querySelector('.main__brands-more');
+let moreBrands = document.querySelector('.brands__more');
 
 moreBrands.addEventListener('click', function () {
 
-        let moreText = document.querySelector('.main__more-text');
+        let moreText = document.querySelector('.brands__more-text');
 
         if (moreText.textContent === 'Показать все') {
 
             moreText.textContent = 'Скрыть';
-            let brandsBox = document.querySelector('.main__brands-box');
-            brandsBox.classList.add('main__brands-box--open');
+            let brandsBox = document.querySelector('.brands__box');
+            brandsBox.classList.add('brands__box--open');
 
             } else {
 
             moreText.textContent = 'Показать все';
-            let brandsBox = document.querySelector('.main__brands-box');
-            brandsBox.classList.remove('main__brands-box--open');
+            let brandsBox = document.querySelector('.brands__box');
+            brandsBox.classList.remove('brands__box--open');
 
             }
 });
