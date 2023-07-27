@@ -1,11 +1,13 @@
 @import '../libs/normalize';
 @import './variables.scss';
 
+@import './root.scss';
 @import './header.scss';
 @import './main.scss';
 @import './footer.scss';
 @import './sidebar-mask.scss';
 @import './brand-box';
+@import './swiper-box.scss';
 
 
 @import './sidebar-mask.scss';
@@ -23,18 +25,6 @@ html, body {
   border: 2px solid black;
 }
 
-.display--none {
-  display: none;
-}
-.display--block {
-  display: block;
-}
-.display--inlineBlock {
-  display: inline-block;
-}
-.display--inline {
-  display: inline;
-}
 .cps-root {
   
   width: 100vw;
@@ -585,23 +575,27 @@ a  {
   width: 100%;
   height: auto;
   background-color: rgba(58, 38, 0, 0);
-  display: block;
+  display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  padding: 0;
   
 }
 
 .main__post-text {
-          
+   
+  width: 90%;
+  margin: 0;
+  padding: 16px;
+  padding: 4px 30px 16px 24px;
   font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  width: 48%;
-  padding: 4px 30px 16px 12px;
-  margin-top: 4px;
 
   
+ 
+
 }
 
 
@@ -785,7 +779,6 @@ a  {
 
 }
 
-
 .main__brand-href {
   display: inline-block;
   width: 40px;
@@ -890,99 +883,6 @@ a  {
   width: 94px;
   height: 24px;
   
-}
-
-.main__brands-swiper {
-
-  width: 96%;
-  min-width: 0;
-  height: 150px;
-  box-sizing: border-box;
-  margin-top: 24px;
-  margin-bottom: 48px;
-  overflow: hidden;
-
-
-}
-
-.swiper {
-  
-  width: 248px !important;
-  height: 100px;
-  display: none;
-  overflow: visible !important;
-
-  margin-left: 24px !important;
-  height: 120px;
-
- 
-  
-}
-.swiper-slide {
-
-  display: block;
-  position: center;
-  overflow: visible;
-  margin-bottom: 24px;
- 
-
-}
-
-.swiper-pagination {
-  width: 90vw !important;
- 
-  
-
-}
-
-
-
-/*   width < 768 */
-
-@media screen and (max-width: 768px) {
-
-
-  .main__post {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
-  
-  }
-  .main__post-text {
-   
-      width: 90%;
-      margin: 0;
-      padding: 16px;
-      padding-left: 24px;
-      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-     
-
-  }
-
-  .main__brand-item  {
-      background-color: rgb(176, 176, 176);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 224px;
-      
-      height: 72px;
-      margin: auto;
-      
-      
-      border: 1px solid rgba(234, 234, 234, 1);
-      background-color: rgba(255, 255, 255, 1);
-      border-radius: 6px;
-
-  }
-
-
-
-
 }
 
 /*   768 < width < 1120px  */
@@ -1124,8 +1024,9 @@ a  {
       letter-spacing: 0.2px;
       border-left: 0;
       width: 44%;
-      padding: 16px 20px 16px 20px;
+      padding: 16px 20px 16px 24px;
       align-self: flex-start;
+      
       
   }
 
