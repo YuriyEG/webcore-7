@@ -205,12 +205,6 @@
         background-color: rgba(248, 248, 248, 1);
         height: 42px;
 
-        &__hi-res-text {
-
-            display: inline-block;
-
-        }
-
         &__block:nth-child(2), &__block:nth-child(3) {
 
             display: none;
@@ -250,7 +244,7 @@
             font-size: 28px;
             line-height: 40px;
             letter-spacing: -0.6px;
-            font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
         }
 
