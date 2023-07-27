@@ -1,0 +1,271 @@
+.header {
+
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  
+.header .hi-res-text {
+    display: none;
+  }
+  
+  .header__burger {
+  
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/burger.svg');
+    background-position: 50% 50% no-repeat;
+    align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
+  
+  }
+
+  .header__divider {
+
+    width: 2px;
+    height: 32px;
+    background-color:rgba(234, 234, 234, 1);
+    align-self: center;
+    margin-left: 16px;
+    display: inline; 
+  
+  }
+  
+  .header__logo {
+  
+    width: 98px;
+    height: 52px;
+    background-image: url('../img/LogoCPS.svg');
+    align-self: center;
+  
+  }
+
+
+  .header__call {
+
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/call.svg');
+  background-position: 50% 50% no-repeat;
+  align-self: center;
+  margin-left: 16px;
+
+}
+
+.header__profile {
+
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/profile.svg');
+  background-position: 50% 50% no-repeat;
+  align-self: center;
+  margin-left: 16px;
+
+}
+
+.header__chat {
+
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/chat.svg');
+  background-position: 50% 50% no-repeat;
+  align-self: center;
+  margin-left: 16px;
+
+}
+
+.header__repair {
+
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/repair.svg');
+    background-position: 50% 50% no-repeat;
+    align-self: center;
+    margin-left: 16px;
+  
+  }
+  
+  .header__checkstatus {
+  
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/checkstatus.svg');
+    background-position: 50% 50% no-repeat;
+    align-self: center;
+    margin-left: 16px;
+    
+  }
+  
+  
+  .header__hi-resol {
+  
+    display: inline-block;
+    align-self: center;
+    margin-left: 16px;
+    margin-right: -4px;
+    font-weight: bold;
+    font-size: 16px;
+    display: none;
+  
+  }
+
+  
+.header__burger + .header__divider {
+
+    display: none;
+  
+  }
+  
+  .header__block {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .header  .main__text {
+  
+    display: none;
+  
+  }
+  
+  .header__block:last-child {
+  
+    margin-right: 16px;
+    
+  }
+
+  .header__block:nth-child(4) .header__divider {
+
+    display: none;
+  
+  }
+  
+  .header__block:nth-child(3) {
+  
+    display: none;
+  
+  }
+  
+  
+  @media screen and (min-width:  768px) and (max-width: 1120px) {
+      
+     
+  .header {
+
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+
+}
+
+
+.header__block:nth-child(2) {
+
+    display: flex;
+
+}
+
+.header__block {
+
+    margin-right: 20px;
+
+}
+
+.header__block:nth-child(2) {
+
+    margin-right: auto;
+  
+}
+
+.header__block:nth-child(3) {
+
+    display: flex;
+
+}
+
+.header__block:last-child .header__divider:first-child {
+
+    display: inline;
+    margin-right: 4px;
+
+}
+
+  
+  }
+  
+  
+  @media screen and (min-width: 1121px) {
+  
+    
+    .header {
+
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+        background-color: rgba(248, 248, 248, 1);
+        height: 42px;
+
+    }
+
+    .header .main__text {
+
+        display: inline-block;
+
+     }
+
+    .header__block:nth-child(2), .header__block:nth-child(3) {
+        display: none;
+    
+    }
+
+    .header__block:nth-child(4) {
+        margin-left: auto;
+        margin-right: 32px;
+        margin-bottom: 12px;
+    }
+    
+    .header__block:nth-child(4)  .header__hi-resol{
+
+        display: inline-block;
+        margin-left: 32px;
+        
+        
+       
+    }
+    
+    .header__checkstatus {
+        margin-left: 12px;
+    }
+    .header__repair {
+        margin-left: 12px;
+    }
+    .header .hi-res-text {
+
+        display: inline;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+
+    }
+  
+  
+  }
