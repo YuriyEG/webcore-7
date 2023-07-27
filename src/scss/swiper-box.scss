@@ -41,3 +41,23 @@
   
 
 }
+
+
+
+
+@media screen and (min-width:  768px) and (max-width: 1120px) {
+    
+.main__brands-swiper {
+  display: none;
+}
+
+}
+
+
+@media screen and (min-width: 1121px) {
+
+  .main__brands-swiper {
+    display: none;
+}
+
+}
