@@ -1,6 +1,7 @@
 @import '../libs/normalize';
 @import './variables.scss';
 
+
 @import './root.scss';
 @import './header.scss';
 @import './main.scss';
@@ -9,6 +10,8 @@
 @import './sidebar.scss';
 @import './brand-box';
 @import './swiper-box.scss';
+
+@import './effects.scss';
 
 
 @import './sidebar-mask.scss';
@@ -20,10 +23,6 @@ html, body {
   margin: 0;
   padding: 0;
 
-}
-
-.border {
-  border: 2px solid black;
 }
 
 .cps-root {
@@ -58,26 +57,6 @@ html, body {
 
 
 
-
-
-
-
-.scale-effect:hover {
-
-  transform: scale(1.05);
-  transition: all 0.1s ease-out;
-  
-}
-.rotate-effect:hover {
-  transform: rotate(10deg);
-  transition: all 0.1s ease-out;
-}
-
-.opacity-effect:hover {
-  opacity: 70%;
-  transition: all 0.1s ease-out;
-  
-}
 
 
 
