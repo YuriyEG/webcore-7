@@ -14,18 +14,18 @@
   }
   
   .main__text {
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
     font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
     font-weight: 900;
+    display: inline-block;
+    padding-bottom: 16px;
+    vertical-align: 20%;
   
   }
-  
+
   .main__menu {
    
     height: 40px;
@@ -37,6 +37,8 @@
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+    border: 1px solid black;
+
   
   }
   
@@ -85,115 +87,13 @@
      
   }
   
-  .main__post {
+
+ 
+
+
+
   
-    width: 100%;
-    height: auto;
-    background-color: rgba(58, 38, 0, 0);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    padding: 0;
-    
-  }
-  
-  .main__post-text {
-     
-    width: 90%;
-    margin: 0;
-    padding: 16px;
-    padding: 4px 30px 16px 24px;
-    font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-  
-    
-   
-  
-  }
-  
-  
-  .main__picture {
-  
-    width: 52%;
-    height: auto;
-    margin: 0;
-    object-fit: cover;
-  
-  }
-  
-  .main__hidden-text {
-    display: none;
-  }
-  
-  .main__summary {
-  
-    width: 140px;
-    height: 24px;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  
-  
-  }
-  
-  .main__summary-text {
-  
-    display: inline;
-    
-    margin-left: 4px;
-    white-space: nowrap;
-    align-self: center;
-  
-    font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2;
-  
-  
-  }
-  
-  .main__text {
-  
-    display: inline-block;
-    padding-bottom: 16px;
-    vertical-align: 20%;
-    font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-  
-  }
-  
-  .main__more {
-  
-    background-image: url('../img/expand.svg');
-    width: 24px;
-    height: 24px;
-  
-  }
-  
-  #more {
-  
-    display: none;
-  
-  }
-  
-  .main__picture {
-  
-    width: 98%;
-    height: auto;
-    display: block;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-  
-  }
+
   
   .main__tittle-span {
   
@@ -450,45 +350,8 @@
         
     }
    
-    .main__post  {
-  
-        display: flex;
-        flex-direction: row;
-        width: 96%;
-        height: auto;
-        min-height: 300px;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        padding-top: 0px;
-      
-        
-    
-    }
-  
-    .main__post-text {
-  
-        font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        border-left: 0;
-        width: 44%;
-        padding: 16px 20px 16px 24px;
-        align-self: flex-start;
-        
-        
-    }
 
-    .main__picture {
 
-        width: 48%;
-        height: auto;
-        margin: 0;
-        object-fit: cover;
-  
-    }
   
   
   
@@ -594,51 +457,7 @@
         
     }
 
-    .main__post  {
 
-        display: flex;
-        flex-direction: row;
-        width: 96%;
-        height: auto;
-        min-height: 300px;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        padding-top: 0px;
-      
-        
-    
-    }
-
-    .main__hidden-text {
-        display: inline;
-
-    }
-    
-    .main__post-text {
-        
-        font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        font-weight: 200;
-        width: 48%;
-        padding: 4px 30px 16px 12px;
-        margin-top: 4px;
-        
-    }
-    
-
-    .main__picture {
-
-        width: 52%;
-        height: auto;
-        margin: 0;
-        object-fit: cover;
-
-    }
-   
     .block {
       
         display: flex;
@@ -659,16 +478,7 @@
      
      }
 
-     .main__summary {
 
-         display: none;
-     }
-
-     #more {
-
-         display: inline;
-
-     }
      .main__brands {
  
          width: 100%;
@@ -716,22 +526,7 @@
  
      }
 
-     .main__more {
-         display: inline;
-         margin: 0;
-         padding: 0;
-     
-         
 
-     }
-
-     .main__more-text {
-         margin: 0;
-         padding: 0;
-         display: inline;
-
-       
-     }
      .main__brands-box--open {
          height: auto;
      }

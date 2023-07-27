@@ -87,13 +87,13 @@ moreBrands.addEventListener('click', function () {
 });
 
 // Показ скрытого текста о компании
-let mainSummary  = document.querySelector('.main__summary');
+let mainSummary  = document.querySelector('.post__summary');
 
 mainSummary.addEventListener( 'click', function () {
 
     mainSummary.classList.add('display--none');
-    mainSummary.classList.remove('main__summary');
-    let hiddenText = document.querySelector('.main__hidden-text');
+    mainSummary.classList.remove('post__summary');
+    let hiddenText = document.querySelector('.post__hidden-text');
     hiddenText.style.display = 'inline';
     
 });

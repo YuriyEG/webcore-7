@@ -1,0 +1,187 @@
+.post {
+  
+    width: 100%;
+    height: auto;
+    background-color: rgba(58, 38, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 0;
+
+    &__pictiure {
+
+        width: 52%;
+        height: auto;
+        margin: 0;
+        object-fit: cover;
+
+    }
+
+    &__hidden-text {
+
+        display: none;
+
+    }
+
+    &__text {
+
+        width: 90%;
+        margin: 0;
+        padding: 16px;
+        padding: 4px 30px 16px 24px;
+        font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+
+    }
+
+    &__summary {
+
+        width: 140px;
+        height: 24px;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+    }
+
+    &__summary-text {
+
+        display: inline;
+        margin-left: 4px;
+        white-space: nowrap;
+        align-self: center;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2;
+
+    }
+
+    &__more {
+
+        background-image: url('../img/expand.svg');
+        width: 24px;
+        height: 24px;
+
+    }
+
+    &__picture {
+
+        width: 98%;
+        height: auto;
+        display: block;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+
+    }
+  
+ 
+  }
+  
+
+  @media screen and (min-width:  768px) and (max-width: 1120px) {
+
+    .post  {
+  
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+        height: auto;
+        min-height: 300px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+
+        &__text {
+
+            font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            border-left: 0;
+            width: 44%;
+            padding: 16px 20px 16px 24px;
+            align-self: flex-start;
+
+        }
+
+        &__picture {
+
+            width: 48%;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+
+        }
+      
+    }
+
+  }
+
+  @media screen and (min-width: 1121px) {
+
+    .post  {
+
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+        height: auto;
+        min-height: 300px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+
+        &__text {
+
+            font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            font-weight: 200;
+            width: 48%;
+            padding: 4px 30px 16px 12px;
+            margin-top: 4px;
+        
+        }
+
+        &__picture {
+
+            width: 52%;
+            height: auto;
+            margin: 0;
+            object-fit: cover;
+
+        }
+
+        &__more {
+
+            display: inline;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        &__more-text {
+
+            margin: 0;
+            padding: 0;
+            display: inline;
+
+        }
+
+        
+      
+    }
+
+  }
