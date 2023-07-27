@@ -7,6 +7,10 @@ html, body {
 
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 
 @import '../libs/normalize';
 @import './variables.scss';
