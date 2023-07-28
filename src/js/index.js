@@ -120,6 +120,31 @@ moreBrands.addEventListener('click', function () {
             }
 });
 
+
+//  Показ всего списка устройств
+
+let moreDevices = document.querySelector('.devices__more');
+
+moreDevices.addEventListener('click', function () {
+
+        console.log('devices');
+        let moreText2 = document.querySelector('.devices__more-text');
+
+        if (moreText2.textContent === 'Показать все') {
+
+            moreText2.textContent = 'Скрыть';
+            let devicesBox = document.querySelector('.devices__box');
+            devicesBox.classList.add('devices__box--open');
+
+            } else {
+
+            moreText2.textContent = 'Показать все';
+            let devicesBox = document.querySelector('.devices__box');
+            devicesBox.classList.remove('devices__box--open');
+
+            }
+});
+
 // Показ скрытого текста о компании
 let mainSummary  = document.querySelector('.post__summary');
 
