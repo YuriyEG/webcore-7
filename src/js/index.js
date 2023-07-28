@@ -9,7 +9,7 @@ console.log('Я внес изменения');
 import '../index.html';
 import '../scss/style.scss';
 
-  // Показ и скрытие бокового меню с кнопки
+  // Показ бокового меню с кнопки
    let headerBurger = document.querySelector('.header__burger');
 
    headerBurger.addEventListener( 'click', function () {
@@ -64,8 +64,8 @@ openMask.addEventListener('click', function () {
           let feedbackList = document.querySelector('.feedback-list');
           let callList = document.querySelector('.call-list');
 
-          feedbackList.style.right = '-500px';
-          callList.style.right = '-500px';
+          feedbackList.style.right = '-600px';
+          callList.style.right = '-600px';
 
           feedbackList.style.transition = 'right 0.3s ease';
           callList.style.transition = 'right 0.3s ease';
@@ -152,12 +152,35 @@ let showFeedbackList =  ()  => {
     mask.style.display = 'block';
 
     feedbackList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
+    let rootFeed = document.querySelector('.root');
+    rootFeed.style.position = 'fixed';
 
 
 }
 
 feedback.addEventListener( 'click', showFeedbackList );
 feedback2.addEventListener( 'click', showFeedbackList );
+
+// Кнопка закрытия окна обратной связи 
+
+    let feedbackClose = document.querySelector('.feedback-list__close');
+    let feedbackList = document.querySelector('.feedback-list');
+    let mask = document.querySelector('.sidebar__mask');
+    let sidebarFeed = document.querySelector('.sidebar');
+
+    let closeFeed = () => {
+
+        console.log('feed');
+        feedbackList.style.right = '-600px';
+        mask.style.display = 'none';
+        sidebarFeed.style.left = '-400px';
+        let rootFeed = document.querySelector('.root');
+        rootFeed.style.position = 'relative';
+        
+    }
+
+    feedbackClose.addEventListener( 'click', closeFeed  );
+
 
 
 // заказа звонок

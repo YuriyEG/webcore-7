@@ -14,7 +14,29 @@
         <!-- Главная обертка сайта -->
         <div  class="root" id="root"> 
             
+            <!-- Модальное окно обратной связи -->
+            
             <div class="feedback-list">
+
+                <div class="feedback-list__header">
+                    <div class="feedback-list__close"></div>
+                    <div class="feedback-list__title1">Обратная связь</div>
+                </div>
+                <div class="feedback-list__title2">Обратная связь</div>
+
+                <form class="feedback-list__form" name="feedback" method="POST" action="/feedback.php">
+                
+                    <input class="feedback-list__input" type="text" name="name" placeholder="Имя" required="required"><br>
+                    <input class="feedback-list__input" type="phone" name="phone" placeholder="Телефон" required="required"><br>
+                    <input class="feedback-list__input" type="email" name="email" placeholder="Электронная почта" required="required"><br>
+                    <textarea class="feedback-list__area" name="message" placeholder="Сообщение"></textarea>
+                    <div class="feedback-list__note">
+                        Нажимая “отправить”, вы даете согласие 
+                        на <span class='imp'>обработку персональных данных</span> и 
+                        соглашаетесь с нашей <span class='imp'>политикой конфиденциальности</span>
+                    </div>
+                    <input class="feedback-list__submit" type="submit" name="submit_btn" value="ОТПРАВИТЬ">
+                  </form>
 
             </div>
 
