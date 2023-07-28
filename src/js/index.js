@@ -61,6 +61,11 @@ openMask.addEventListener('click', function () {
         root.style.position = 'relative';
         saidbar.style.boxShadow = '0 0 0 0 black';
 
+        let feedbackList = document.querySelector('.feedback-list');
+        feedbackList.style.right = '-400px';
+        feedbackList.style.transition = 'right 0.3s ease';
+      
+
 });
 
 
@@ -97,6 +102,37 @@ mainSummary.addEventListener( 'click', function () {
     hiddenText.style.display = 'inline';
     
 });
+
+
+
+// Показ формы обратной связи
+
+
+let feedback = document.querySelector('.header__chat');
+let feedback2 = document.querySelector('.sidebar__chat');
+
+let showFeedbackList =  ()  => {
+    console.log('feedback');
+    let feedbackList = document.querySelector('.feedback-list');
+    feedbackList.style.display = 'block';
+    feedbackList.style.right = '0px';
+    feedbackList.style.transition = 'right 0.3s ease';
+
+
+    let mask = document.getElementById('mask');
+    mask.style.display = 'block';
+
+    feedbackList.style.boxShadow = '0 -50px 65px 0 rgba(0, 0, 0, 0.385)';
+
+
+}
+
+feedback.addEventListener( 'click', showFeedbackList );
+feedback2.addEventListener( 'click', showFeedbackList );
+
+
+
+
 
 
 
@@ -155,6 +191,7 @@ const swiper = new Swiper('.swiper', {
       });
 
      
-      
+
+    
 
   
