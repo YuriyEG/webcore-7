@@ -178,7 +178,12 @@ let showFeedbackList =  ()  => {
 
     feedbackList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
     let rootFeed = document.querySelector('.root');
-    rootFeed.style.position = 'fixed';
+  
+    let mediaQue = window.matchMedia('( max-width: 1120px )');
+    if (mediaQue.matches) {
+      rootFeed.style.position = 'fixed';
+    }
+    
 
 
 }

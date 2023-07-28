@@ -1,0 +1,51 @@
+
+
+.commertial {
+
+    max-width: 480px;
+    height: auto;
+    border: 1px solid black;
+    padding: 24px;
+    box-sizing: border-box;
+
+
+
+    &__first-line {
+
+       
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.2px;
+        font-family: $regular;
+    }
+
+    &__second-line {
+
+        width: auto;
+        height: auto;
+        margin-top: 16px;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-family: $regular;
+        font-weight: 900;
+
+    }
+
+    &__second-line::after {
+
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/more-red.svg');
+        background-size: 120%;
+        position: absolute;
+        top: -2px;
+
+
+    }
+}
