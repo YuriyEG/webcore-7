@@ -1,0 +1,26 @@
+
+
+.call-list {
+    
+    width: 320px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 100;
+    right: -400px;
+    
+    
+}
+
+
+@media ( min-width: 768px ) {
+
+    .call-list {
+
+        width: 440px;
+        right: -500px;
+
+        
+    }
+}
+

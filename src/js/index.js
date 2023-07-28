@@ -53,17 +53,46 @@ var openMask = document.querySelector('.sidebar__mask');
 openMask.addEventListener('click', function () {
 
         openMask.style.display = 'none';
+     
 
-        var saidbar = document.querySelector('.sidebar');
-        saidbar.style.left = '-400px';
-        saidbar.style.transition = 'left 0.5s ease';
-        var root = document.getElementById('root');
-        root.style.position = 'relative';
-        saidbar.style.boxShadow = '0 0 0 0 black';
+     
+          
+          var root = document.getElementById('root');
+          root.style.position = 'relative';
+          
 
-        let feedbackList = document.querySelector('.feedback-list');
-        feedbackList.style.right = '-400px';
-        feedbackList.style.transition = 'right 0.3s ease';
+          let feedbackList = document.querySelector('.feedback-list');
+          let callList = document.querySelector('.call-list');
+
+          feedbackList.style.right = '-500px';
+          callList.style.right = '-500px';
+
+          feedbackList.style.transition = 'right 0.3s ease';
+          callList.style.transition = 'right 0.3s ease';
+
+          
+
+            var saidbar = document.querySelector('.sidebar');
+
+          var media = window.matchMedia( '(max-width: 1120px)' );
+
+          if (media.matches) {
+            saidbar.style.left = '-400px';
+            saidbar.style.transition = 'left 0.5s ease';
+            saidbar.style.boxShadow = '0 0 0 0 black';
+        
+          }
+
+            
+
+          
+            
+
+          
+
+        
+
+        
       
 
 });
@@ -122,7 +151,7 @@ let showFeedbackList =  ()  => {
     let mask = document.getElementById('mask');
     mask.style.display = 'block';
 
-    feedbackList.style.boxShadow = '0 -50px 65px 0 rgba(0, 0, 0, 0.385)';
+    feedbackList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
 
 
 }
@@ -131,8 +160,33 @@ feedback.addEventListener( 'click', showFeedbackList );
 feedback2.addEventListener( 'click', showFeedbackList );
 
 
+// заказа звонок
+
+let call = document.querySelector('.header__call');
+let call2 = document.querySelector('.sidebar__call');
+
+let showCallList =  ()  => {
+    console.log('call');
+    let callList = document.querySelector('.call-list');
+    callList.style.display = 'block';
+    callList.style.right = '0px';
+    callList.style.transition = 'right 0.3s ease';
 
 
+    let mask = document.getElementById('mask');
+    mask.style.display = 'block';
+
+    callList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
+
+
+}
+
+call.addEventListener( 'click', showCallList );
+call2.addEventListener( 'click', showCallList );
+
+
+
+// Код слайдера
 
 
 
