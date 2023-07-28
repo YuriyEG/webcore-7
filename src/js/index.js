@@ -304,11 +304,6 @@ const swiper = new Swiper('.swiper', {
         },
       
         // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: 'true',
-          hide: false,
-        },
 
         keyboard: {
           enabled: true,
@@ -326,7 +321,7 @@ const swiper = new Swiper('.swiper', {
         
        
         // watchOverFlow: true,
-        spaceBeetween: 32, 
+        spaceBeetween: 64, 
 
         // autoHeight: true,
         slidesPerWiew: 2,

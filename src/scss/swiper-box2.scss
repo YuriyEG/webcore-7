@@ -2,12 +2,12 @@
 
     width: 96%;
     min-width: 0;
-    height: 150px;
+    height: auto;
     box-sizing: border-box;
     margin-top: 24px;
     margin-bottom: 48px;
     overflow: hidden;
-    border: 1px solid black;
+  
 
   
   
@@ -15,8 +15,8 @@
   
   .swiper {
     
-    width: 248px !important;
-    height: 100px;
+    width: 262px !important;
+    height: auto !important;
     display: none;
     overflow: visible !important;
   
@@ -27,13 +27,16 @@
    
     
   }
+
+
   .swiper-slide {
   
     display: block;
     position: center;
     overflow: visible;
     margin-bottom: 24px;
-    border: 1px solid black;
+    box-sizing: border-box;
+   
    
   
   }
