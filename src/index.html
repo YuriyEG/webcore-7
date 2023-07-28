@@ -40,7 +40,25 @@
 
             </div>
 
+            <!-- Форма для заказа звонка -->
+
             <div class="call-list">
+                <div class="call-list__header">
+                    <div class="call-list__close"></div>
+                    <div class="call-list__title1">Заказать звонок</div>
+                </div>
+                <div class="call-list__title2">Заказать звонок</div>
+
+                <form class="call-list__form" name="feedback" method="POST" action="/feedback.php">
+                
+                    <input class="call-list__input" type="phone" name="phone" placeholder="Телефон" required="required"><br>
+                    <div class="call-list__note">
+                        Нажимая “отправить”, вы даете согласие 
+                        на <span class='imp'>обработку персональных данных</span> и 
+                        соглашаетесь с нашей <span class='imp'>политикой конфиденциальности</span>
+                    </div>
+                    <input class="call-list__submit" type="submit" name="submit_btn" value="ОТПРАВИТЬ">
+                  </form>
 
             </div>
 

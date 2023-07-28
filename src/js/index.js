@@ -1,4 +1,4 @@
-console.log('Я внес изменения');
+
 
 
 
@@ -176,6 +176,17 @@ feedback2.addEventListener( 'click', showFeedbackList );
         sidebarFeed.style.left = '-400px';
         let rootFeed = document.querySelector('.root');
         rootFeed.style.position = 'relative';
+
+        var media = window.matchMedia( '(min-width: 1120px)' );
+
+          if (media.matches) {
+
+            var saidbar = document.querySelector('.sidebar');
+            saidbar.style.left = '0px';
+           
+            saidbar.style.boxShadow = '0 0 0 0 black';
+        
+          }
         
     }
 
@@ -183,7 +194,7 @@ feedback2.addEventListener( 'click', showFeedbackList );
 
 
 
-// заказа звонок
+// окрыть форму заказа звонка
 
 let call = document.querySelector('.header__call');
 let call2 = document.querySelector('.sidebar__call');
@@ -207,6 +218,38 @@ let showCallList =  ()  => {
 call.addEventListener( 'click', showCallList );
 call2.addEventListener( 'click', showCallList );
 
+
+// Закрыть форму заказа звонка 
+
+
+    let callClose = document.querySelector('.call-list__close');
+    let callList = document.querySelector('.call-list');
+    let mask2 = document.querySelector('.sidebar__mask');
+    let sidebarFeed2 = document.querySelector('.sidebar');
+
+    let closeFeed2 = () => {
+
+        console.log('closeCall');
+        callList.style.right = '-600px';
+        mask2.style.display = 'none';
+        sidebarFeed2.style.left = '-200px';
+        let rootFeed = document.querySelector('.root');
+        rootFeed.style.position = 'relative';
+
+        var media = window.matchMedia( '(min-width: 1120px)' );
+
+          if (media.matches) {
+
+            var saidbar = document.querySelector('.sidebar');
+            saidbar.style.left = '0px';
+           
+            saidbar.style.boxShadow = '0 0 0 0 black';
+        
+          }
+        
+    }
+
+    callClose.addEventListener( 'click', closeFeed2  );
 
 
 // Код слайдера

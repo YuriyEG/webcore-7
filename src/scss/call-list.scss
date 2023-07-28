@@ -1,5 +1,6 @@
 
 
+
 .call-list {
     
     width: 320px;
@@ -7,8 +8,151 @@
     background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 100;
-    right: -400px;
+    right: -600px;
+    box-sizing: border-box;
+
+
+    &__header {
+
+        width: 100%;
+        height: 88px;
+        position: relative;
+        box-sizing: border-box;
+        
+
+    }
+
+    &__close {
+
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/close.svg');
+        position: absolute;
+        top: 24px;
+        left: 16px;
+    }
+
+    &__title1 {
+
+        display: none;
+
+    }
     
+    &__title2 {
+
+        display: inline-block;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 12px;
+        text-indent: 12px;
+        position: relative;
+
+    }
+
+    &__title2::before {
+
+        content: '';
+        width: 4px;
+        height: 40px;
+        background-color:  rgba(65, 246, 215, 1);
+        position: absolute;
+        left: -2px;
+        top: -8px;
+        border-radius: 2px;
+        box-sizing: border-box;
+
+    }
+    
+    &__form {
+
+        width: 304px;
+        height: 526px;
+    
+    }
+
+    &__input {
+
+        width: 288px;
+        height: 40px;
+        margin-left: 16px;
+        margin-top: 16px;
+        border-radius: 6px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        text-indent: 12px;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+
+    }
+
+
+    &__area {
+        
+        width: 294px;
+    
+        min-height: 118px;
+        max-height: 118px;
+        margin-left: 16px;
+        margin-top: 16px;
+        border-radius: 6px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        resize: none;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 12px;
+        box-sizing: border-box;
+        
+    }
+
+    &__submit {
+
+        width: 136px;
+        height: 32px;
+        background-image: url('../img/goside.svg');
+        background-repeat: no-repeat;
+        background-color:rgba(255, 62, 121, 1);
+        border-radius: 16px;
+        background-position: 98px 4px;
+        border: none;
+        font-size: 12px; 
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: left;
+        color: white;
+        text-indent: 12px;
+        position: relative;
+        z-index: 1;
+
+        margin-left: 170px;
+        
+    }
+
+    &__note {
+
+        box-sizing: border-box;
+        width: 290px;
+        margin-left: 16px;
+        margin-top: 14px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(126, 126, 130, 1);
+
+        .imp {
+
+            color: rgba(255, 62, 121, 1);
+
+        }
+
+    }
+
+    
+
+   
+
+
     
 }
 
@@ -18,9 +162,97 @@
     .call-list {
 
         width: 440px;
-        right: -500px;
+        right: -600px;
+
+
+
+
+        &__close {
+
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/close.svg');
+        position: absolute;
+        top: 24px;
+        left: -72px;
+
+        }
+
+        &__title1 {
+
+            display: inline-block;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.6px;
+            font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 32px;
+            text-indent: 32px;
+            position: relative;
+
+            
+
+        }
+
+        &__title1::before {
+
+            content: '';
+            width: 3px;
+            height: 40px;
+            background-color:  rgba(65, 246, 215, 1);
+            position: absolute;
+            left: -2px;
+            top: -8px;
+            border-radius: 2px;
+            box-sizing: border-box;
+
+        }
+
+        &__title2 {
+            
+            display: none;
+
+        }
+
+        &__form {
+
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        &__input {
+
+            margin-left: 28px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            width: 376px;
+         
+        }
+
+        &__area {
+
+            margin-left: 28px;
+            margin-top: 0;
+            width: 382px;
+        }
+
+        &__note {
+            
+            width: 380px;
+            margin-left: 28px;
+        }
+
+        &__submit {
+
+            margin-left: 275px;
+            margin-top: 8px;
+        }
 
         
+    
     }
+
+    
 }
+
 
