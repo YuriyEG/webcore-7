@@ -1,0 +1,58 @@
+.main__brands-swiper {
+
+    width: 96%;
+    min-width: 0;
+    height: 150px;
+    box-sizing: border-box;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    overflow: hidden;
+    border: 1px solid black;
+
+  
+  
+  }
+  
+  .swiper {
+    
+    width: 248px !important;
+    height: 100px;
+    display: none;
+    overflow: visible !important;
+  
+    margin-left: 24px !important;
+    height: 120px;
+   
+  
+   
+    
+  }
+  .swiper-slide {
+  
+    display: block;
+    position: center;
+    overflow: visible;
+    margin-bottom: 24px;
+    border: 1px solid black;
+   
+  
+  }
+  
+  .swiper-pagination {
+    
+    width: 90vw !important;
+   
+    
+  
+  }
+  
+  
+  
+  
+  @media screen and (min-width:  768px)  {
+      
+  .main__brands-swiper2 {
+    display: none;
+  }
+  
+  }
