@@ -1,0 +1,180 @@
+.main__brands-swiper3 {
+
+    width: 96%;
+    min-width: 0;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    overflow: hidden;
+  
+
+  
+  
+  }
+  
+  .swiper {
+    
+    width: 262px !important;
+    height: auto !important;
+    display: none;
+    overflow: visible !important;
+  
+    margin-left: 24px !important;
+    height: 120px;
+   
+  
+   
+    
+  }
+
+
+  .swiper-slide {
+  
+    display: block;
+    position: center;
+    overflow: visible;
+    margin-bottom: 24px;
+    margin-right: 12px;
+    box-sizing: border-box;
+   
+   
+  
+  }
+  
+  .swiper-pagination {
+    
+    width: 90vw !important;
+   
+    
+  
+  }
+
+  .prices-slide { 
+
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    height: 200px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
+
+
+    position: relative;
+
+    &__service {
+
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      color: rgba(126, 126, 130, 1);
+      opacity: 72%;
+
+
+
+    }
+
+    &__service-about {
+
+      font-size: 14px;
+      line-height: 18px;
+      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      margin-top: -8px;
+
+
+    }
+
+    &__price {
+
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      color: rgba(126, 126, 130, 1);
+      opacity: 72%;
+
+    }
+
+    &__price-about {
+
+      margin-top: -8px;
+      font-size: 14px;
+      line-height: 18px;
+      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   
+
+
+    }
+
+    &__time {
+
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      color: rgba(126, 126, 130, 1);
+      opacity: 72%;
+      margin-top: 8px;
+
+
+    }
+
+    &__time-about {
+
+      font-size: 14px;
+      line-height: 18px;
+      font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      margin-top: -8px;
+
+
+    }
+
+    &__button {
+
+      position: absolute;
+      width: 118px;
+      height: 32px;
+      border-radius: 16px;
+      border: none;
+      background-color: rgba(255, 62, 121, 1);
+      right: 16px;
+      bottom: 16px;
+
+      font-size: 12px;
+      line-height: 24px;
+      font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      color: white;
+      text-align: left;
+      text-indent: 6px;
+
+      
+
+  }
+
+  &__button::after {
+
+      content: '';
+      width: 24px; 
+      height: 24px;
+      background-image: url('../img/goside.svg');
+      position: absolute;
+      left: 80px;
+  }
+}
+  
+  
+  
+  
+  // @media screen and (min-width:  768px)  {
+      
+  // .main__brands-swiper3 {
+  //   display: none;
+  // }
+  
+  // }

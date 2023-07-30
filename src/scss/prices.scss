@@ -1,0 +1,261 @@
+.prices {
+
+    width: 100%;
+    height: auto;
+ 
+
+    &__title {
+
+        width: 100%;
+        height: auto;
+        min-height: 56px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-bottom: 16px;
+        box-sizing: border-box;
+        background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+
+        a {
+
+            display: inline-block;
+            text-decoration: none;
+            width: auto;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgba(126, 126, 130, 1);
+
+        }
+  
+    }
+
+    &__box {
+
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 0px;
+        box-sizing: border-box;
+        justify-items: auto;
+
+    }
+
+    &__more {
+
+        display: none;
+        width: 200px;
+        padding-left: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        .more:first-child {
+
+            margin-right: 12px;
+            background-image: url('../img/expand.svg');
+            width: 24px;
+            height: 24px;
+
+        }
+
+        
+
+    }
+
+    &__more-text {
+
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    &__item {
+
+        background-color: rgb(176, 176, 176);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 260px;
+        height: 200px;
+        margin-right: 24px;
+        margin-bottom: 16px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 16px;
+    
+
+    }
+
+    &__href {
+
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/go.svg');
+        margin: 16px;
+
+    }
+
+    &__forw {
+
+        display: inline-block;
+        background-image: url('../img/go-devices.svg');
+        width: 40px;
+        height: 40px;
+        margin-top: auto;
+        margin-left: auto;
+        align-self: flex-end;
+        
+
+
+    }
+
+    &__name {
+
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: -0.2px;
+
+    }
+
+
+ }
+
+  @media screen and (min-width:  768px) and (max-width: 1120px) {
+
+          
+    .prices {
+  
+        width: 100%;
+
+        &__title {
+
+            a {
+
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+        }
+
+        &__box {
+
+            padding-top: 24px;
+            padding-left: 24px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 24px;
+
+        }
+
+        &__item {
+
+            width: 29%;
+            margin-right: 24px;
+            margin-bottom: 16px;
+            min-width: 215px;
+
+        }
+
+        &__more {
+
+            display: flex;
+            margin: 0px 24px 24px 32px;
+            font-family: $medium,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgba(27, 28, 33, 1);
+            font-size: 16px;
+            line-height: 24px;
+            width: 200px;
+            margin-left: 4px;
+
+        }
+
+        &__box--open {
+
+            height: auto;
+
+        }
+
+    }
+
+
+}
+
+
+  @media screen and (min-width: 1121px) {
+
+
+  .prices {
+ 
+    width: 100%;
+
+    &__title {
+
+        a  {
+
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+
+        }
+
+    }
+
+    &__item {
+
+        width: 22%;
+        margin-right: 24px;
+        margin-bottom: 16px;
+        min-width: 220px;
+
+    }
+
+    &__box {
+
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        margin-bottom: 24px;
+        padding-left: 24px;
+        padding-top: 24px;
+
+    }
+
+    &__more {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: $regular,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(27, 28, 33, 1);
+        width: 140px;
+        height: 24px;
+        margin-left: 24px;
+        padding: 0;
+
+    }
+
+    &__box--open {
+
+        height: auto;
+
+    }
+       
+}
+
+}
+
+

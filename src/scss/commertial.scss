@@ -34,18 +34,21 @@
         font-family: $regular;
         font-weight: 900;
 
-    }
+        span {
+            position: relative;
+        }
 
-    &__second-line::after {
-
-        content: '';
+        span::after {
+            content: '';
         width: 24px;
         height: 24px;
         background-image: url('../img/more-red.svg');
         background-size: 120%;
         position: absolute;
         top: -2px;
-
+        }
 
     }
+
+
 }
