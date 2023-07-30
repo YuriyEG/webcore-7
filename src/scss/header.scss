@@ -126,6 +126,24 @@
     &__hi-res-text {
 
         display: none;
+    
+        height: 40px;
+        text-indent: 28px;
+        position: relative;
+        margin-bottom: 16px;
+
+    }
+
+    &__hi-res-text::before {
+
+        content: '';
+        height: 40px;
+        width: 4px;
+        box-sizing: border-box;
+        border-radius:  0 4px 4px 0;
+        background-color: rgba(65, 246, 215, 1);
+        position: absolute;
+        left: 0px;
 
     }
 
@@ -146,6 +164,18 @@
         display: none; 
 
     }
+
+    &__highlight1 {
+
+        width: 4px;
+        height: 40px;
+        background-color: rgba(65, 246, 215, 1);
+        border-radius: 0 4px 4px 0;
+        display: inline-block;
+        margin-right: 20px;
+     
+
+  }
 
   }
 
