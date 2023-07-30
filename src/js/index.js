@@ -83,6 +83,10 @@ openMask.addEventListener('click', function () {
         
           }
 
+          let sidebar6 = document.querySelector('.sidebar');
+    
+          sidebar6.style.zIndex = '9';
+
             
 
           
@@ -184,6 +188,13 @@ let showFeedbackList =  ()  => {
       rootFeed.style.position = 'fixed';
       
     }
+
+    let sidebar4 = document.querySelector('.sidebar');
+    
+    sidebar4.style.zIndex = '-10';
+
+
+    
     
 
 
@@ -216,6 +227,10 @@ feedback2.addEventListener( 'click', showFeedbackList );
             saidbar.style.left = '0px';
            
             saidbar.style.boxShadow = '0 0 0 0 black';
+
+            let sidebar5 = document.querySelector('.sidebar');
+    
+           sidebar5.style.zIndex = '9';
         
           }
         
@@ -242,6 +257,10 @@ let showCallList =  ()  => {
     mask.style.display = 'block';
 
     callList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
+
+    let sidebar4 = document.querySelector('.sidebar');
+    
+    sidebar4.style.zIndex = '-10';
 
 
 }
@@ -277,6 +296,10 @@ call2.addEventListener( 'click', showCallList );
             saidbar.style.boxShadow = '0 0 0 0 black';
         
           }
+
+          let sidebar4 = document.querySelector('.sidebar');
+    
+          sidebar4.style.zIndex = '9';
         
     }
 
