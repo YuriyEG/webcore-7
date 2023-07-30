@@ -74,7 +74,7 @@ openMask.addEventListener('click', function () {
 
             var saidbar = document.querySelector('.sidebar');
 
-          var media = window.matchMedia( '(max-width: 1120px)' );
+          var media = window.matchMedia( '(max-width: 1439px)' );
 
           if (media.matches) {
             saidbar.style.left = '-400px';
@@ -179,9 +179,10 @@ let showFeedbackList =  ()  => {
     feedbackList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
     let rootFeed = document.querySelector('.root');
   
-    let mediaQue = window.matchMedia('( max-width: 1120px )');
+    let mediaQue = window.matchMedia('( max-width: 1439px )');
     if (mediaQue.matches) {
       rootFeed.style.position = 'fixed';
+      
     }
     
 
@@ -207,7 +208,7 @@ feedback2.addEventListener( 'click', showFeedbackList );
         let rootFeed = document.querySelector('.root');
         rootFeed.style.position = 'relative';
 
-        var media = window.matchMedia( '(min-width: 1120px)' );
+        var media = window.matchMedia( '(min-width: 1440px)' );
 
           if (media.matches) {
 
@@ -266,7 +267,7 @@ call2.addEventListener( 'click', showCallList );
         let rootFeed = document.querySelector('.root');
         rootFeed.style.position = 'relative';
 
-        var media = window.matchMedia( '(min-width: 1120px)' );
+        var media = window.matchMedia( '(min-width: 1440px)' );
 
           if (media.matches) {
 

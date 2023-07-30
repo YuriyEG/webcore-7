@@ -7,6 +7,7 @@
     flex-direction: column;
     margin-bottom: 50px;
     padding: 0;
+    
 
     &__pictiure {
 
@@ -86,7 +87,7 @@
   }
   
 
-  @media screen and (min-width:  768px) and (max-width: 1120px) {
+  @media screen and (min-width:  768px) and (max-width: 1439px) {
 
     .post  {
   
@@ -127,7 +128,7 @@
 
   }
 
-  @media screen and (min-width: 1121px) {
+  @media screen and (min-width: 1440px) {
 
     .post  {
 
