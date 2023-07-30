@@ -1,12 +1,25 @@
 .main__brands-swiper3 {
 
-    width: 96%;
+    width: 100%;
     min-width: 0;
     height: auto;
     box-sizing: border-box;
     margin-top: 16px;
     margin-bottom: 4px;
     overflow: hidden;
+
+
+
+    .swiper  {
+
+      width: 277px !important;
+      margin-left: 16px !important;
+    }
+
+    .swiper-slide {
+
+      width: 265px !important;
+    }
   
 
   
@@ -58,7 +71,7 @@
     justify-content: space-between;
     width: 260px;
     height: 200px;
-    margin-right: 24px;
+    // margin-right: 24px;
     margin-bottom: 16px;
     
     background-color: rgba(255, 255, 255, 1);

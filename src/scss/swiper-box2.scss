@@ -1,12 +1,23 @@
-.main__brands-swiper {
+.main__brands-swiper2 {
 
-    width: 96%;
+    width: 100%;
     min-width: 0;
     height: auto;
     box-sizing: border-box;
     margin-top: 16px;
     margin-bottom: 4px;
     overflow: hidden;
+
+    .swiper {
+
+      width: 257px !important;
+      margin-left: 16px !important;
+    }
+
+    .swiper-slide {
+
+      width: 245px !important;
+    }
   
 
   
@@ -20,7 +31,7 @@
     display: none;
     overflow: visible !important;
   
-    margin-left: 24px !important;
+    // margin-left: 24px !important;
     height: 120px;
    
   
