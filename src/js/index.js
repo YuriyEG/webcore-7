@@ -193,7 +193,7 @@ let showFeedbackList =  ()  => {
       saidbar13.style.boxShadow = '0 0 0 0 black';
     }
     let sidebar62 = document.querySelector('.sidebar');
-    sidebar62.style.zIndex = '9';
+    
 
 
 }
@@ -266,9 +266,7 @@ let showCallList =  ()  => {
 
     }
 
-    let sidebar7 = document.querySelector('.sidebar');
-    
-    sidebar7.style.zIndex = '-10';
+   
 
 
     // скрываем сайбар
@@ -281,7 +279,7 @@ let showCallList =  ()  => {
       saidbar12.style.boxShadow = '0 0 0 0 black';
     }
     let sidebar61 = document.querySelector('.sidebar');
-    sidebar61.style.zIndex = '9';
+    sidebar61.style.zIndex = '-10';
 
    
 }
