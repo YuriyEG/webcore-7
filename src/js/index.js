@@ -185,6 +185,16 @@ let showFeedbackList =  ()  => {
     
     sidebar4.style.zIndex = '-10';
 
+    var saidbar13 = document.querySelector('.sidebar');
+    var media = window.matchMedia( '(max-width: 1439px)' );
+    if (media.matches) {
+      saidbar13.style.left = '-500px';
+      saidbar13.style.transition = 'left 0.5s ease';
+      saidbar13.style.boxShadow = '0 0 0 0 black';
+    }
+    let sidebar62 = document.querySelector('.sidebar');
+    sidebar62.style.zIndex = '9';
+
 
 }
 
@@ -246,15 +256,34 @@ let showCallList =  ()  => {
     mask.style.display = 'block';
 
     callListWrapper.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
-
-    let sidebar4 = document.querySelector('.sidebar');
     
-    sidebar4.style.zIndex = '-10';
 
-    let rootCall = document.querySelector('.root');
-        rootCall.style.position = 'fixed';
+    let rootCall2 = document.querySelector('.root');
+
+    let mediaQue3 = window.matchMedia('( max-width: 1439px )');
+    if (mediaQue3.matches) {
+        rootCall2.style.position = 'fixed';
+
+    }
+
+    let sidebar7 = document.querySelector('.sidebar');
+    
+    sidebar7.style.zIndex = '-10';
 
 
+    // скрываем сайбар
+
+    var saidbar12 = document.querySelector('.sidebar');
+    var media = window.matchMedia( '(max-width: 1439px)' );
+    if (media.matches) {
+      saidbar12.style.left = '-500px';
+      saidbar12.style.transition = 'left 0.5s ease';
+      saidbar12.style.boxShadow = '0 0 0 0 black';
+    }
+    let sidebar61 = document.querySelector('.sidebar');
+    sidebar61.style.zIndex = '9';
+
+   
 }
 
 call.addEventListener( 'click', showCallList );
