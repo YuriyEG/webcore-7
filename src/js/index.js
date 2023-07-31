@@ -10,6 +10,7 @@ import '../index.html';
 import '../scss/style.scss';
 
   // Показ бокового меню с кнопки
+
    let headerBurger = document.querySelector('.header__burger');
 
    headerBurger.addEventListener( 'click', function () {
@@ -35,7 +36,7 @@ sidebarClose.addEventListener('click', function() {
 
         console.log('close');
         var sideBar = document.querySelector('.sidebar');
-        sideBar.style.left = '-320px';
+        sideBar.style.left = '-500px';
         sideBar.style.boxShadow = '0 0 0 0 rgba(0, 0, 0, 0)';
         sideBar.style.transition = 'left 0.3s ease';
         let mask = document.getElementById('mask');
@@ -77,7 +78,7 @@ openMask.addEventListener('click', function () {
           var media = window.matchMedia( '(max-width: 1439px)' );
 
           if (media.matches) {
-            saidbar.style.left = '-400px';
+            saidbar.style.left = '-500px';
             saidbar.style.transition = 'left 0.5s ease';
             saidbar.style.boxShadow = '0 0 0 0 black';
         
@@ -87,17 +88,7 @@ openMask.addEventListener('click', function () {
     
           sidebar6.style.zIndex = '9';
 
-            
 
-          
-            
-
-          
-
-        
-
-        
-      
 
 });
 
@@ -149,6 +140,7 @@ moreDevices.addEventListener('click', function () {
             }
 });
 
+
 // Показ скрытого текста о компании
 let mainSummary  = document.querySelector('.post__summary');
 
@@ -162,9 +154,7 @@ mainSummary.addEventListener( 'click', function () {
 });
 
 
-
 // Показ формы обратной связи
-
 
 let feedback = document.querySelector('.header__chat');
 let feedback2 = document.querySelector('.sidebar__chat');
@@ -172,6 +162,7 @@ let feedback2 = document.querySelector('.sidebar__chat');
 let showFeedbackList =  ()  => {
     console.log('feedback');
     let feedbackList = document.querySelector('.feedback-list');
+    let feedbackListWrapper = document.querySelector('.feedback-list__wrapper');
     feedbackList.style.display = 'block';
     feedbackList.style.right = '0px';
     feedbackList.style.transition = 'right 0.3s ease';
@@ -180,9 +171,10 @@ let showFeedbackList =  ()  => {
     let mask = document.getElementById('mask');
     mask.style.display = 'block';
 
-    feedbackList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
-    let rootFeed = document.querySelector('.root');
+    feedbackListWrapper.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
   
+    let rootFeed = document.querySelector('.root');
+       
     let mediaQue = window.matchMedia('( max-width: 1439px )');
     if (mediaQue.matches) {
       rootFeed.style.position = 'fixed';
@@ -192,10 +184,6 @@ let showFeedbackList =  ()  => {
     let sidebar4 = document.querySelector('.sidebar');
     
     sidebar4.style.zIndex = '-10';
-
-
-    
-    
 
 
 }
@@ -215,7 +203,7 @@ feedback2.addEventListener( 'click', showFeedbackList );
         console.log('feed');
         feedbackList.style.right = '-600px';
         mask.style.display = 'none';
-        sidebarFeed.style.left = '-400px';
+        sidebarFeed.style.left = '-500px';
         let rootFeed = document.querySelector('.root');
         rootFeed.style.position = 'relative';
 
@@ -248,6 +236,7 @@ let call2 = document.querySelector('.sidebar__call');
 let showCallList =  ()  => {
     console.log('call');
     let callList = document.querySelector('.call-list');
+    let callListWrapper = document.querySelector('.call-list__wrapper');
     callList.style.display = 'block';
     callList.style.right = '0px';
     callList.style.transition = 'right 0.3s ease';
@@ -256,11 +245,14 @@ let showCallList =  ()  => {
     let mask = document.getElementById('mask');
     mask.style.display = 'block';
 
-    callList.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
+    callListWrapper.style.boxShadow = '16px 0 52px 0 rgba(0, 0, 0, 0.385)';
 
     let sidebar4 = document.querySelector('.sidebar');
     
     sidebar4.style.zIndex = '-10';
+
+    let rootCall = document.querySelector('.root');
+        rootCall.style.position = 'fixed';
 
 
 }
@@ -282,7 +274,7 @@ call2.addEventListener( 'click', showCallList );
         console.log('closeCall');
         callList.style.right = '-600px';
         mask2.style.display = 'none';
-        sidebarFeed2.style.left = '-200px';
+        sidebarFeed2.style.left = '-500px';
         let rootFeed = document.querySelector('.root');
         rootFeed.style.position = 'relative';
 
@@ -300,6 +292,8 @@ call2.addEventListener( 'click', showCallList );
           let sidebar4 = document.querySelector('.sidebar');
     
           sidebar4.style.zIndex = '9';
+          let rootCall2 = document.querySelector('.root');
+          rootCall2.style.position = 'relative';
         
     }
 

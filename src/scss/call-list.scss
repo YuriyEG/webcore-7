@@ -5,12 +5,22 @@
     
     width: 320px;
     height: 100%;
-    background-color: rgb(255, 255, 255);
     position: absolute;
     z-index: 100;
     right: -600px;
     box-sizing: border-box;
-    overflow: scroll;
+    
+
+    &__wrapper {
+
+        width: 320px;
+
+        height: 100%;
+        background-color: rgba(255, 255, 255);
+        overflow: scroll;
+
+
+    }
 
 
     &__header {
@@ -31,6 +41,7 @@
         position: absolute;
         top: 24px;
         left: 16px;
+        z-index: 2;
     }
 
     &__title1 {
@@ -162,9 +173,16 @@
 
     .call-list {
 
-        width: 440px;
+        width: 520px;
         right: -600px;
 
+        &__wrapper {
+
+            width: 440px;
+            height: 100%;
+            margin-left: auto;
+            
+        }
 
 
 
@@ -175,7 +193,7 @@
         background-image: url('../img/close.svg');
         position: absolute;
         top: 24px;
-        left: -72px;
+        
 
         }
 
