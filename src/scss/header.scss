@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .header {
 
     width: 100%;
@@ -7,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
     font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     &__burger {
@@ -26,7 +28,7 @@
 
         width: 2px;
         height: 32px;
-        background-color:rgba(234, 234, 234, 1);
+        background-color: $dividerColor;
         align-self: center;
         margin-left: 16px;
         display: inline; 
@@ -141,7 +143,7 @@
         width: 4px;
         box-sizing: border-box;
         border-radius:  0 4px 4px 0;
-        background-color: rgba(65, 246, 215, 1);
+        background-color: $titleTextColor;
         position: absolute;
         left: 0px;
 
@@ -169,7 +171,7 @@
 
         width: 4px;
         height: 40px;
-        background-color: rgba(65, 246, 215, 1);
+        background-color: $titleTextColor;
         border-radius: 0 4px 4px 0;
         display: inline-block;
         margin-right: 20px;
@@ -232,7 +234,7 @@
         display: flex;
         align-items: center;
         margin-top: 48px;
-        background-color: rgba(248, 248, 248, 1);
+        background-color: $background;
         height: 42px;
 
         &__block:nth-child(2), &__block:nth-child(3) {

@@ -1,4 +1,4 @@
-
+@import './variables.scss';
 
 .footer {
 
@@ -10,7 +10,7 @@
     font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(126, 126, 130, 1);
+    color: $menuTextColor;
     padding-left: 24px;
     padding-right: 24px;
     align-items: center;
@@ -52,7 +52,7 @@
 
     a {
         text-decoration: none;
-        color: rgba(126, 126, 130, 1);
+        color: $menuTextColor;
     }
 
 }
@@ -73,7 +73,7 @@
     font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(126, 126, 130, 1);
+    color: $menuTextColor;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 12px;
@@ -121,7 +121,7 @@
 
     a {
         text-decoration: none;
-        color: rgba(126, 126, 130, 1);
+        color: $menuTextColor;
     }
 
 }
@@ -144,7 +144,7 @@
         font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 14px;
         line-height: 16px;
-        color: rgba(126, 126, 130, 1);
+        color: $menuTextColor;
         padding-left: 24px;
         padding-right: 24px;
         padding-top: 12px;
@@ -195,7 +195,7 @@
     
         a {
             text-decoration: none;
-            color: rgba(126, 126, 130, 1);
+            color: $menuTextColor;
             opacity: 72%;
         }
     

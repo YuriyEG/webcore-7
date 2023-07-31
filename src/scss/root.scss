@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .root {
   
     width: 100vw;
@@ -10,7 +12,7 @@
     margin-right: auto;
     padding-bottom: 20px;
     z-index: 0;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: $background;
 
     @media screen and (min-width:  768px) and (max-width: 1439px) {
     

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .prices {
 
    
@@ -17,7 +19,7 @@
         padding-left: 24px;
         padding-bottom: 16px;
         box-sizing: border-box;
-        background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+        background-image: linear-gradient(90deg, $gradientOne 1.39%, $gradientTwo 100%);
         margin-top: 24px;
         border-top: 1px solid rgba(217, 255, 245, 1);
 
@@ -29,7 +31,7 @@
             font-size: 16px;
             line-height: 24px;
             font-family: $regular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: rgba(126, 126, 130, 1);
+            color: $menuTextColor;
 
         }
   
@@ -62,7 +64,7 @@
         height: 96%;
         min-height: 100px;
         box-sizing: border-box;
-        background-color: white;
+        background-color: $white;
         border-radius: 10px;
         position: relative;
         margin-top: 48px;
@@ -79,7 +81,7 @@
         width: 96%;
         margin-left: 2%;
 
-        color: rgba(126, 126, 130, 1);
+        color: $menuTextColor;
         
         font-size: 14px;
         line-height: 16px;
@@ -96,7 +98,7 @@
 
             width: 96%;
             height: 56px;
-            background-color: white;
+            background-color: $white;
             display: flex;
             flex-direction: row;
             margin: 0 auto;
@@ -163,10 +165,10 @@
         height: 32px;
         border-radius: 16px;
         border: none;
-        background-color: rgba(255, 62, 121, 1);
+        background-color: $buttonColor;
         font-size: 12px;
         line-height: 24px;
-        color: white;
+        color: $white;
         font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: left;
         text-indent: 8px;
@@ -194,12 +196,12 @@
 
     &__bottom-border {
 
-        border-bottom: 1px solid rgba(234, 234, 234, 1);
+        border-bottom: 1px solid $dividerColor;
     }
 
     &__top-border {
 
-        border-top: 1px solid rgba(234, 234, 234, 1);
+        border-top: 1px solid $dividerColor;
 
     }
 

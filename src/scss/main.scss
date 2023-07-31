@@ -1,9 +1,10 @@
+@import './variables.scss';
 
 .main {
 
     width: 100%;
     height: auto;
-    background: rgba(248, 248, 248, 1);
+    background: $background;
     font-family: $medium;
     color: rgb(0, 0, 0);
     display: flex;
@@ -30,7 +31,7 @@
           margin: 0 auto;
           margin-left: 16px;
           margin-bottom: 24px;
-          background-color: rgba(255, 166, 0, 0);
+          background-color: $opacityNull;
           display: flex;
           flex-direction: row;
           overflow-x: auto;
@@ -42,12 +43,11 @@
 
           width: 4px;
           height: 40px;
-          background-color: rgba(65, 246, 215, 1);
+          background-color: $titleTextColor;
           border-radius: 0 4px 4px 0;
           display: inline-block;
           margin-right: 20px;
        
-
     }
 
     &__menu::-webkit-scrollbar {
@@ -65,9 +65,9 @@
           font-weight: lighter;
           border-radius: 6px;
           white-space: nowrap;
-          color: gray;
+          color: $menuTextColor;
           box-sizing: border-box;
-          border: 1px solid rgba(186, 7, 7, 0);
+          border: 1px solid $opacityNull;
           font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 16px;
           line-height: 24px;
@@ -81,7 +81,7 @@
 
     &__menu-item:hover {
 
-          border: 1px solid rgba(0, 0, 0, 0.107);
+          border: 1px solid $menuHover;
       
           padding-left: 16px;
           padding-right: 16px;
@@ -115,7 +115,7 @@
         width: 4px;
         box-sizing: border-box;
         border-radius:  0 4px 4px 0;
-        background-color: rgba(65, 246, 215, 1);
+        background-color: $titleTextColor;
         position: absolute;
         left: 0px;
 

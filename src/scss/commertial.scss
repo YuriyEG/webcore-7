@@ -1,4 +1,4 @@
-
+@import './variables.scss';
 
 .commertial {
 
@@ -7,7 +7,7 @@
  
     padding: 24px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(217, 255, 245, 1);
+    border-top: 1px solid $borderTop;
 
 
 

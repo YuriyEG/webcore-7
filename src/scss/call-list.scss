@@ -1,4 +1,4 @@
-
+@import './variables.scss';
 
 
 .call-list {
@@ -16,7 +16,7 @@
 
         width: 320px;
         height: 100vh;
-        background-color: rgba(255, 255, 255);
+        background-color: $white;
         overflow: scroll;
 
     }
@@ -69,7 +69,7 @@
         content: '';
         width: 4px;
         height: 40px;
-        background-color:  rgba(65, 246, 215, 1);
+        background-color:  $titleTextColor;
         position: absolute;
         left: -2px;
         top: -8px;
@@ -92,7 +92,7 @@
         margin-left: 16px;
         margin-top: 16px;
         border-radius: 6px;
-        border: 1px solid rgba(234, 234, 234, 1);
+        border: 1px solid $dividerColor;
         text-indent: 12px;
         font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
@@ -109,7 +109,7 @@
         margin-left: 16px;
         margin-top: 16px;
         border-radius: 6px;
-        border: 1px solid rgba(234, 234, 234, 1);
+        border: 1px solid $dividerColor;
         resize: none;
         font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 12px;
@@ -123,7 +123,7 @@
         height: 32px;
         background-image: url('../img/goside.svg');
         background-repeat: no-repeat;
-        background-color:rgba(255, 62, 121, 1);
+        background-color: $buttonColor;
         border-radius: 16px;
         background-position: 98px 4px;
         border: none;
@@ -132,11 +132,10 @@
         letter-spacing: -0.15px;
         font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: left;
-        color: white;
+        color: $white;
         text-indent: 12px;
         position: relative;
         z-index: 1;
-
         margin-left: 170px;
         
     }
@@ -151,11 +150,11 @@
         font-size: 14px;
         line-height: 16px;
         font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgba(126, 126, 130, 1);
+        color: $menuTextColor;
 
         .imp {
 
-            color: rgba(255, 62, 121, 1);
+            color: $buttonColor;
 
         }
 
@@ -221,7 +220,7 @@
             content: '';
             width: 3px;
             height: 40px;
-            background-color:  rgba(65, 246, 215, 1);
+            background-color: $titleTextColor;
             position: absolute;
             left: -2px;
             top: -8px;

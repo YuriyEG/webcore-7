@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .main__brands-swiper3 {
 
     width: 100%;
@@ -65,7 +67,7 @@
 
   .prices-slide { 
 
-    background-color: rgb(176, 176, 176);
+    background-color: $devicesItemText;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,7 +76,7 @@
     // margin-right: 24px;
     margin-bottom: 16px;
     
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $white;
     border-radius: 6px;
     box-sizing: border-box;
     padding: 20px;
@@ -87,7 +89,7 @@
       font-size: 14px;
       line-height: 16px;
       font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-      color: rgba(126, 126, 130, 1);
+      color: $menuTextColor;
       opacity: 72%;
 
 
@@ -110,7 +112,7 @@
       font-size: 14px;
       line-height: 16px;
       font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-      color: rgba(126, 126, 130, 1);
+      color: $menuTextColor;
       opacity: 72%;
 
     }
@@ -131,7 +133,7 @@
       font-size: 14px;
       line-height: 16px;
       font-family: $medium, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-      color: rgba(126, 126, 130, 1);
+      color: $menuTextColor;
       opacity: 72%;
       margin-top: 8px;
 
@@ -155,14 +157,14 @@
       height: 32px;
       border-radius: 16px;
       border: none;
-      background-color: rgba(255, 62, 121, 1);
+      background-color: $buttonColor;
       right: 16px;
       bottom: 16px;
 
       font-size: 12px;
       line-height: 24px;
       font-family: $bold, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-      color: white;
+      color: $white;
       text-align: left;
       text-indent: 6px;
 
